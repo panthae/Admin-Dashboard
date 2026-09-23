@@ -2,158 +2,151 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
-    font-family: 'Courier New', Courier, monospace;
-    border: 1px solid red;
 }
 
 body{
-    background-color: rgb(231, 192, 192);
+    background-color: aliceblue;
     color: #1e293b;
 }
 
-.container {
+.container{
     display: grid;
-    grid-template-columns: 240px 1fr 280px;
+    grid-template-columns: 260px 1fr;
     grid-template-rows: auto 1fr;
     min-height: 100vh;
-}
-
-.header {
-    grid-column: 2/ 4;
-    background-color: aquamarine;
-    
-    display: flex;
-    font-size: 18px;
-    justify-content: space-between;
-
-}
-
-.header form {
-    display: flex;
-    align-items: center;
-    gap: 15px;
-}
-
-.header input {
-    border: 2px solid #ccc;
-    border-radius: 20px;
-    font-size: 18px;
-    width: 200px;
-    
-}
-
-.header2 {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-}
-
-.header3{
-    display: flex;
-    align-items: center;
-    gap: 10px;
-}
-
-.header3 img {
-    border-radius: 50%;
-    width: 40px;
-    height: 40px;
-    object-fit: cover;
-
-}
-
-.header4 p{
-    font-size: 14px;
-    font-weight: bold;
-}
-
-.header5 {
-    display: flex;
-    gap: 15px;
-    align-items: center;
-}
-
-.header5 button{
-    padding: 8px 16px;
-    border-radius: 5px;
-    font-weight: bold;
-    background-color: #1a73e8;
-    color: white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    
 }
 
 .main-sidebar{
     grid-column: 1/ 2;
     grid-row: 1/ 3;
-    background-color: #1e293b;
-    color: #fff;
-    padding: 20px;
+    background-color: #1992d4;
+    color: aliceblue;
+    padding: 20px 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.sidebar{
+    display: flex;
+    align-items: center;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.sidebar svg{
+    width: 45px;
+    height: 45px;
     
-
 }
-.sidebar2{
+
+.left-menu,
+.left-bot-menu{
+    display: flex;
+    align-items: center;
     font-size: 18px;
-    margin-top: 50px;
-}
-
-.sidebar3{
-    font-size: 18px;
-    margin-top: 50px;
-    padding-top: 15px;
-}
-
-.main-content{
-    grid-column: 2/ 3;
-    padding: 20px;
-}
-
-.content1 h3{
-    font-size: 20px;
-    margin-bottom: 15px;
-    color: #1e293b;
-}
-
-.content2{
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    font-weight: bold;
     gap: 20px;
 }
 
-.content3{
-    background-color: #ffff;
-    padding: 20px;
-    border-radius: 8px;
-}
-
-.content3 p{
-    font-size: 13px;
-    color: #666;
-    line-height: 1,5;
-}
-
-.content4{
-    display: flex;
-    gap: 15px;
-    margin-top: 15px;
-}
-
-.content4 img{
+.left-menu svg,
+.left-bot-menu svg{
     width: 24px;
     height: 24px;
 }
 
-.right-sidebar{
-    grid-column: 3/ 4;
+.header{
+    grid-column: 2/ 3;
+    
     background-color: #fff;
-    position: 20px;
+    padding: 20px 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }
 
-.announcements h3,
-.trendind h3{
+.top-row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.search-section{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    max-width: 700px;
+}
+
+.search-section svg{
+    width: 22px;
+    height: 22px;
+}
+
+.search-section input{
+    padding: 8px 16px;
+    background-color: #e2e8f0;
+    border-radius: 20px;
+    font-size: 16px;
+}
+
+.user-section{
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.user-section svg {
+    width: 24px;
+    height: 24px;
+
+}
+
+.bottom-row{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.bottom-row svg{
+    height: 24px;
+    width: 24px;
+}
+.bottom-section{
+    font-size: 12pxpx;
+    font-weight: bold;
+}
+
+.menus{
+    display: flex;
+    gap: 20px;
+}
+
+.menus button{
+    background-color: #1992d4;
+    color: white;
+    padding: 8px 24px;
+    border-radius: 20px;
+    font-weight: bold;
+
+}
+.main-content{
+    grid-column: 2/ 3;
+    padding: 30px;
+    display: grid;
+    grid-template-columns: 1fr 320px;
+    gap: 30px;
+    align-items: start;
+}
+
+.title{
     font-size: 18px;
     margin-bottom: 15px;
-    color: #1e293b;
 }
+
+.card-section{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 25px;
+}
+
